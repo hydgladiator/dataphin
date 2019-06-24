@@ -15,23 +15,23 @@
 
 ## 配置Access Key {#section_h45_ns2_2hb .section}
 
-1.  使用主账号登录阿里云官网，单击页面右上方的用户图像，选择**accesskeys**。
+1.  使用主账号登录阿里云控制台，将鼠标悬停于页面右上方的用户图像，选择**accesskeys**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135653/156136461444297_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135653/156136806044297_zh-CN.png)
 
 2.  在弹出的**安全提示**框中，选择**继续使用AccessKey**，为主账号创建AccessKey。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135653/156136461441322_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135653/156136806041322_zh-CN.png)
 
     **说明：** 如果选择**开始使用子用户AccessKey**会跳转至创建子账号页面，您可以为子账号创建AccessKey。
 
-3.  单击**创建AccessKey**，填写校验码后，即可创建成功。
+3.  单击**创建AccessKey**，填写校验码，单击**确定**后即可创建成功。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135653/156136461441323_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135653/156136806041323_zh-CN.png)
 
 4.  主账号登录Dataphin管理控制台，单击**Access Key配置**，配置或更新授权给Dataphin的Access key。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135653/156136461441319_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135653/156136806141319_zh-CN.png)
 
     **说明：** 
 
@@ -40,6 +40,6 @@
 5.  Access Key填写完成后，单击**校验**。返回校验成功后，单击**确定**。
 6.  如果需要更新Access Key，单击**修改**，输入新的**Access Key ID**和**Access Key Secret**，单击**校验**。返回校验成功后，单击**确定**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135653/156136461544301_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135653/156136806144301_zh-CN.png)
 
 
