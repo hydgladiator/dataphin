@@ -13,9 +13,9 @@ Therefore, you must have an Alibaba Cloud account and manage your RAM user accou
 
 ## Register an Alibaba Cloud account {#section_m2r_mry_zgb .section}
 
-If you have not yet registered an Alibaba Cloud account, go to the [Alibaba Cloud official website](https://www.alibabacloud.com). Click **Free Account** to create a new Alibaba Cloud account.
+If you have not yet registered an Alibaba Cloud account, go to the [Alibaba Cloud official website](https://www.alibabacloud.com/). Click **Free Account** to create a new Alibaba Cloud account.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135650/156134579041318_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135650/156136195241318_en-US.png)
 
 ## Real-name authentication {#section_rjp_dp2_2hb .section}
 
