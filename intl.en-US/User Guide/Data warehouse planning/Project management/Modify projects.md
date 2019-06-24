@@ -7,15 +7,15 @@ On the project management page, project administrators can configure project inf
 1.  Log on to Dataphin.
 2.  In the top navigation bar of the Dataphin homepage, choose **Planning**. Alternatively, you can go to the Planning page from the **Intelligent Data Warehouse Planning** quick access area.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/148397/156134915641387_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/148397/156134917941387_en-US.png)
 
 3.  In the left-side navigation pane, choose **Project Management**. Click **Information Settings** in the lower part of a project card.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149037/156134915641434_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149037/156134917941434_en-US.png)
 
 4.  In the dialog box that appears, a project administrator can change the project display name, description, and project type.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149037/156134915641435_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149037/156134918041435_en-US.png)
 
     **Note:** 
 
@@ -27,16 +27,16 @@ On the project management page, project administrators can configure project inf
 
 1.  Click **Members Management** in the lower part of a project card.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149037/156134915641437_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149037/156134918041437_en-US.png)
 
 2.  In the dialog box that appears, a project administrator can view, add, and remove members. A project administrator can change the roles of other users. The super administrator is the default project administrator. You cannot remove the super administrator from project members or change the role of the user who is under the super administrator role. Click **OK** to save the configuration.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149037/156134915641438_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149037/156134918041438_en-US.png)
 
 
 ## Go to workbenches {#section_tvx_33t_2hb .section}
 
 By clicking **Enter Workbench** in the lower part of a project card, you can go to the R&D workbench of the project to start your development work.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149037/156134915641441_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149037/156134918041441_en-US.png)
 
