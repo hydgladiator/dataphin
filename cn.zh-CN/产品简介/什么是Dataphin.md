@@ -10,7 +10,7 @@ Dataphin（智能数据构建与管理）是智能的大数据平台建设引擎
 
 Dataphin研发工作台如下图所示。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135643/156134476440201_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/135643/156142726440201_zh-CN.png)
 
 ## 功能概览 {#section_kfw_qlt_zgb .section}
 
