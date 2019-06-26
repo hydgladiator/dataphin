@@ -16,40 +16,40 @@ Data sources are classified into database engines and computing engines.
 1.  Log on to Dataphin.
 2.  In the top navigation bar of the Dataphin homepage, choose **Planning**. Alternatively, you can go to the Planning page from the **Intelligent Data Warehouse Planning** quick access area.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/148397/156151680641387_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/148397/156153698941387_en-US.png)
 
 3.  In the left-side navigation pane, choose **Database Engines**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680641445_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699041445_en-US.png)
 
 4.  In the upper right corner of the page, click **Create Data Source** to open the database engine configuration dialog box.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680741448_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699041448_en-US.png)
 
 5.  You must select a data source type and specify the required information about your data source. Currently, the supported data source types include MaxCompute, MySQL, SQL Server, PostgreSQL, Oracle, HDFS, Hive, DRDS, FTP, Vertica, AnalyticDB, ElasticSearch, HBase 1.1.x, HBase 0.94.x, and MongoDB.
     -   If the selected data source type is MaxCompute, enter an endpoint, a project name, an AccessKey ID, and an AccessKey Secret.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680741450_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699041450_en-US.png)
 
     -   If the selected data source type is MySQL, DRDS, or PostgreSQL, enter a JDBC connection URL, a username, and a password.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680741451_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699041451_en-US.png)
 
     -   If the selected data source type is SQL Server or Oracle, specify a JDBC connection URL, a schema, a username, and a password.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680741452_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699041452_en-US.png)
 
     -   If the selected data source type is Vertica, specify a JDBC connection URL, a schema, a username, and a password.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680741453_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699141453_en-US.png)
 
     -   If the selected data source type is HDFS, the configurations required are shown in the following figure. You need to specify a DefaultFS address and whether to enable Kerberos authentication. If you enable Kerberos authentication, you need to enter a KDC server endpoint, select a Keytab file, and enter a Kerberos principal name.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680841454_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699141454_en-US.png)
 
     -   If the selected data source type is FTP, the configurations required are shown in the following figure. You need to specify a protocol, a host address, a port number, a username, and a password.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680841456_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699141456_en-US.png)
 
     -   If the selected data source type is Hive, the configurations required are shown in the following figure.
 
@@ -57,23 +57,23 @@ Data sources are classified into database engines and computing engines.
         -   For HDFS configuration, you need to select a Keytab file and enter a Kerberos principal name.
         -   For Hive configuration: you need to enter a JDBC connection URL, a username, and a password used for Hive2 connection.
         -   For metadatabase configuration: you need to specify a database type, a JDBC connection URL, a username, and a password.
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680841457_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699141457_en-US.png)
 
     -   If the selected data source is Elasticsearch, enter an Elasticsearch URL, a username, and a password, as shown in the following figure.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680841460_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699141460_en-US.png)
 
     -   If the selected data source type is HBase, select either the HBase 0.94.x or HBase 1.1.x version. The configurations required are shown in the following figure, including an HBase endpoint and the parameters \(in JSON format\) for connecting to HBase.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680841463_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699241463_en-US.png)
 
     -   If the selected data source type is MongoDB, enter a JDBC connection URL, a username, and a password, as shown in the following figure.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680841466_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699241466_en-US.png)
 
     -   If the selected data source type is AnalyticDB \(formerly ADS\), enter a JDBC connection URL, a username, and a password, as shown in the following figure.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156151680941469_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149041/156153699241469_en-US.png)
 
 6.  Click **Test Connection** to run a database connectivity test. If the message **The data source is connected** is returned, your configurations are saved. Click **OK** to exit.
 
@@ -81,5 +81,5 @@ Data sources are classified into database engines and computing engines.
 
 After a database engine is created, the super administrator and database engine creator can run a connectivity test on the database engine. If an error occurs while performing a synchronization task, a connectivity test can be used to check whether the error is caused by database engine connection problems. If the database engine is not correctly connected, the super administrator or the database engine creator needs to modify the connection configurations and ensure they are valid. The super administrator and creators can also perform operations such as delete database engines, modify connection configurations, and transfer ownership. The user interface is shown in the following figure.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149057/156151680941470_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/149057/156153699241470_en-US.png)
 
