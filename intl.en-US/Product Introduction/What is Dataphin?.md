@@ -1,18 +1,16 @@
 # What is Dataphin? {#concept_g55_nlt_zgb .concept}
 
-This topic describes what Dataphin is and explains its many functions and benefits.
+Dataphin is an engine for creating intelligent big data platforms. It is designed to meet the requirements of big data construction, management, and utilization across multiple industries.
 
-## About Dataphin {#section_o2w_4lt_zgb .section}
+## Video introduction {#section_0k2_e5i_414 .section}
 
-Dataphin is an engine for creating intelligent big data platforms. It is designed to meet the requirements of big data construction, management, and utilization across multiple industries. It applies Alibaba Group's OneData, OneEntity, OneService \(product, technology, methodology\) big data construction system proven by 10 years of experience. Dataphin provides an end-to-end intelligent data creation and management solution covering data ingestion, data standardization, data modeling, data development, data distilling, data asset management, and data services. These features help governments and enterprises build an asset-oriented, service-oriented, closed-loop, and self-optimizing intelligent data system with unified standards to stimulate and drive innovation.
-
-Dataphin aims to remove data differences resulted from different computing and storage environments. By using Dataphin, you can quickly import data, create standard data, and build data models to automatically produce data. You can also create a tag system \(distilling tags from entities\), implement business knowledge, accumulate data assets, and solve data issues. Dataphin also provides multiple types of data services including data table search and intelligent voice search.
-
-![](images/40201_en-US.png "R&D Workbench")
+You can quickly learn about Dataphin by watching the video below.  
 
 ## Functions {#section_kfw_qlt_zgb .section}
 
-Dataphin has the following modules:
+Dataphin applies Alibaba Group's OneData, OneEntity, OneService \(product, technology, methodology\) big data construction system proven by 10 years of experience. Dataphin provides an end-to-end intelligent data creation and management solution covering data ingestion, data standardization, data modeling, data development, data distilling, data asset management, and data services. These features help governments and enterprises build an asset-oriented, service-oriented, closed-loop, and self-optimizing intelligent data system with unified standards to stimulate and drive innovation.
+
+Dataphin has the following function modules:
 
 -   **Platform** 
 
@@ -28,11 +26,11 @@ Dataphin has the following modules:
 
 -   **Data standardization** 
 
-    Based on the architecture defined in global design and the fundamental data collected by data ingestion, you can create data elements such as dimensions and statistical metrics. You can use these data elements to ensure that unambiguous and standardized data will be produced.
+    Based on the architecture defined in global design and the source data layer built by data ingestion, you can create data elements such as dimensions and statistical metrics. You can use these data elements to ensure that unambiguous and standardized data will be produced.
 
 -   **Modeling** 
 
-    You can use the data elements created for data standardization to visually design data models. After the data models are submitted and published, Dataphin automatically generates code of the models and recurrent scheduled data production tasks. This is a full suite of services that provides total/complete management of common data production.
+    You can use the data elements created for data standardization to visually design data models. After the data models are submitted and published, Dataphin automatically generates code of the models and recurrent scheduled data production tasks. This is a full suite of services that provides complete management of data production on the common dimensional model layer.
 
 -   **Coding** 
 
@@ -48,7 +46,7 @@ Dataphin has the following modules:
 
 -   **Metadata center** 
 
-    Dataphin allows you to collect, parse, and manage metadata of fundamental data, common data, and distilled data.
+    Dataphin allows you to collect, parse, and manage metadata of the source data layer, common dimensional model layer, and distilled data center.
 
 -   **Data asset management** 
 
@@ -59,18 +57,28 @@ Dataphin has the following modules:
     This module supports asset data searches through custom SQL queries. You can use the search and analysis engine to quickly search for data in physical tables and theme-based logical tables. Theme-based logical tables are also known as data models or logical models.
 
 
-## Benefits {#section_psd_qlt_zgb .section}
+## Why choose Dataphin {#section_psd_qlt_zgb .section}
 
-Dataphin provides the following benefits.
+Dataphin aims to remove data differences resulted from different computing and storage environments. By using Dataphin, you can quickly import data, create standard data, and build data models to automatically produce data. You can also create a tag system \(distilling tags from entities\), implement business knowledge, accumulate data assets, and solve data issues. Dataphin also provides multiple types of data services including data table search and intelligent voice search.
+
+By choosing Dataphin, you can easily build a data system with the following advantages:
 
 -   Data standardization: The definitions of dimensions, dimension attributes, business processes, and metrics are standardized based on dimensional modeling. This standardization helps to guarantee the quality of data and accuracy of metrics.
 -   Efficient and automatic coding: You can define atomic metrics, business filters, granularity, and statistical periods. By combining these four types of computing logic components, you can then define derived metrics. You can use these components to create data models. Based on your models, the system will automatically generate code to produce data.
 -   Optimal intelligent computation: You can create logical models from business perspectives. After you publish your logical models, the system automatically generates the physical representations of the logical models and the code of the logical models. This reduces your dependence on professional data developers.
 -   End-to-end development: Data ingestion, modeling, development, management, data search, and exploration are integrated to implement centralized and efficient development.
 -   Systematic data directories: Based on standardized modeling, efficient and automatic metadata extraction, you can create standardized and user-readable business data directories. These data directories will form a data asset map to facilitate data search and application.
--   Efficient data search: An overview of data assets is provided based on your metadata and the data from the Dataphin system database to achieve simple, fast, and intelligent search of data table and data.
+-   Efficient data search: An overview of data assets is provided based on your metadata and the data from the Dataphin system database to achieve simple, fast, and intelligent search of data tables and data.
 -   Visualized data assets: A business data asset map is systematically built to help present your business system from data perspectives, extract business data knowledge, and learn about key business steps and data.
 -   Easy and reliable data utilization: Data elements can be used for data production after they are created. You can easily search for and access logical tables created based on business themes. This simplifies about 80% of query code.
 -   High efficiency: Dataphin provides end-to-end and intelligent data construction and management tools. This reduces data construction requirements. Developers can independently implement the extract, transform, and load \(ETL\) procedure to quickly meet the demand for data. The OneData, OneEntity, and OneService methodology \(patent pending\) enables the abstraction and definition of models and metrics, automatic coding, automatic theme-based data aggregation and output.
 -   Low costs: Dataphin is metadata-based and algorithm intelligence-driven. Automatic data production on the physical plane \(backend computing engine\) and that on the logical plane \(UI\) are performed independently. In addition to comprehensive analysis, tracking, and optimization for data assets, Dataphin ensures optimal computation and storage resource allocation. This greatly reduces costs of data utilization.
+
+For more reasons to choose Dataphin, see [Scenarios](intl.en-US/Product Introduction/Scenarios.md#).
+
+## Billing {#section_pae_4q3_93g .section}
+
+Dataphin is currently in beta phase, the number of customers who can purchase Dataphin is limited. We recommend that you contact Alibaba Cloud customer sales team and provide the data construction requirements and background information of your enterprise. Then, you can determine whether Dataphin's functions and version meet your specific requirements. If Dataphin meets your requirements, communicate with the sales team to obtain the purchase permission.
+
+Dataphin supports the prepaid mode. For the billing standards, see [Billing](../../../../intl.en-US/Pricing/Billing.md#).
 
