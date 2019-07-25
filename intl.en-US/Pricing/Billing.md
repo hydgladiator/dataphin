@@ -20,9 +20,9 @@ Dataphin is in the beta phase. Currently, only the Intelligence Edition is avail
         -   No additional fees are charged for resources used to run sync tasks and other scheduling resources.
     -   Definition of processing unit:
 
+        The total number of data processing units to be billed is calculated by adding the results of the following calculations.
+
         -   One sync task node or one code task node is calculated as one processing unit.
         -   Every 10 fields in each logical table model is calculated as one processing unit. If there are fewer than 10 fields, the fields are also calculated as one processing unit during billing. The method for calculating the number of processing units billed is to divide the number of fields in each logical table model by 10 and round the result up to the nearest integer. For logical dimension table models and logical fact table models, only the number of fields in the central tables are included in calculating the number of processing units billed. For logical aggregate tables, the number of derived metrics is included in the calculation. In the beta phase, one logical table is calculated as one data processing unit.
-        The total number of data processing units to be billed is calculated by adding the results of the preceding calculations.
-
 -   Currently, the monitoring and alerting system does not support pushing alert notifications.
 
