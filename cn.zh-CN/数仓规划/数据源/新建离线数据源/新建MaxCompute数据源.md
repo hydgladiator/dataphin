@@ -26,7 +26,7 @@ keyword: MaxCompute数据源
 
 6.  在**新建数据源**对话框中，填写数据源信息。
 
-    ![fagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7855209951/p93925.png)
+    ![fagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2353036061/p93925.png)
 
     |参数|描述|
     |--|--|
