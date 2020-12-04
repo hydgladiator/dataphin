@@ -1,30 +1,30 @@
-# 逻辑表实例
+# Logical table task instances
 
-本文为您介绍逻辑表实例功能模块。
+This topic describes the features of the Logical Table Instances page.
 
-## 页面介绍
+## Basic information
 
-1.  [t139462.md\#section\_dcr\_kpw\_chb](/intl.zh-CN/运维中心/运维中心/运维中心概述.md)，单击左侧菜单栏中的**逻辑表实例**，进入逻辑表实例页面，如下图所示。
+1.  [Go to the Scheduling page](/intl.en-US/Scheduling center/Scheduling center/Overview.md), and click **Logical Table Task Instances** to go to the corresponding page, as shown in the following figure.
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7755591951/p41032.png)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0047719851/p41032.png)
 
-2.  在逻辑表实例页面：
-    -   左侧功能区主要用于搜索和展示逻辑表及其内部物理节点实例。
-        -   在上方的搜索框内，用户可以输入逻辑表名、物理节点名称或ID来搜索对应实例。搜索时，节点id是精准匹配，节点名、逻辑表名则支持模糊匹配。默认搜索实例的业务日期是昨天，用户可以选择**前天**、**全部**或**选择具体日期**来过滤搜索结果。
-        -   下方的搜索结果分两层展示，第一层为逻辑表，第二层为逻辑表包含的节点。默认显示节点类型（以图标展示）、节点id、节点名称，所有逻辑表按字母顺序排列。
-        -   鼠标放置于逻辑表节点上，右侧显示**查看字段**按钮，单击可以展开此节点内包含的详细字段，如下图所示。
+2.  On the Logical Table Task Instances page, the layout is as follows:
+    -   In the left-side navigation pane, you can search for and display logical tables and node instances of logical table conversion tasks.
+        -   In the top of the left-side navigation pane, you can enter a logical table name, conversion task node name, or node ID in the search box to search for the corresponding instances. When you search for a logical table instance, a node ID is an exact match keyword, whereas a node name and logical table name are approximate match keywords. By default, the business data timestamp for filtering logical table task instances is yesterday. You can also select **2 Days Ago**, **All** or **a specific date** to filter the search results.
+        -   The search results are displayed in two layers. The first layer displays logical tables, and the second layer displays the nodes of the logical tables. By default, the node type \(displayed as an icon\), node ID, and node name are displayed. All logical tables are listed in alphabetical order.
+        -   Move the pointer over a logical table node instance, and the **View Fields** icon is displayed. Click the icon to expand the details, you can view the fields contained in the node, as shown in the following figure.
 
-            ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7755591951/p41039.png)
+            ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0047719851/p41039.png)
 
-    -   右侧DAG图展示区，默认展示当前逻辑表包含的所有节点实例及其状态（如运行中、运行成功、运行失败），并在左下角动态展示缩略图。
-        -   左上角显示当前逻辑表名称，单击旁边的“双箭头”图标可以切换查看对应实例或任务。
-        -   DAG图右上角有**刷新**按钮，单击可以查看最新的节点关系；在旁边的搜索框内，用户也可以输入节点名或字段来精准定位DAG图中的节点。
-        -   DAG图下方有工具栏，用户可以缩放整个DAG图的大小，或全屏展示DAG图。
-        -   DAG图可拖动。单击DAG上的节点，右下角会显示该节点的详细信息。
+    -   In the right-side workspace, you can see all node instances of the logical table and their status, such as running, succeeded, and failed. In the lower-left corner of the workspace, a thumbnail of the node instance is displayed.
+        -   In the upper-left corner, the name of the current logical table is displayed, you can click the double arrow icon next to it to view the corresponding instances or tasks.
+        -   In the upper-right corner, you can click **Refresh** to view the latest relationships between nodes. In the search box, you can also enter a node name or field name to locate the node in the directed acyclic graph \(DAG\).
+        -   A toolbar is displayed at the bottom of the right-side workspace, you can use it to zoom in or zoom out of the entire DAG or display the DAG in full-screen mode.
+        -   You can also drag the DAG to adjust its location. Click a node in the DAG, the detailed information of the node is displayed in the lower-right corner.
 
-## 右键操作项
+## Right-click menus
 
-如下图所示，右键单击DAG图中的逻辑表实例，会展示所有支持的操作项。在有权限的情况下，可进行：查看运行日志、查看节点代码、重跑并恢复调度、查看周期任务、查看实例等操作。
+Right-click a logical table instance in the DAG, all supported operations are displayed, as shown in the following figure. With permissions, you can perform operations such as view operational logs, view node scripts, rerun and resume scheduling, view recurring tasks, and view instances.
 
-![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7755591951/p41041.png)
+![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0047719851/p41041.png)
 
