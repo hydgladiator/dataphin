@@ -1,28 +1,28 @@
-# 任务监控配置管理
+# Configure task monitoring
 
-本文为您介绍如何搜索、查看已有的任务监控，以及开启/关闭、编辑、删除任务监控等。
+This topic describes how to configure the task monitoring, including search for task monitoring configurations, view existing task monitoring configurations, enable or disable task monitoring, modify, and delete task monitoring configurations.
 
-## 搜索、查看已有的任务监控
+## Search for and view existing task monitoring configurations
 
-1.  通过**研发** \> **调度** \> **监控报警** \> **任务监控配置**，进入任务监控配置页面。
+1.  Choose **R&D** \> **Scheduling** \> **Monitoring** \> **Task Monitoring Configuration** to open the configuration page of task monitoring.
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/1389273751/p40772.png)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/136667/156134690840772_en-US.png)
 
-2.  如上图所示：
-    -   您可以在右侧面板上方的搜索框中，输入关键字搜索已有的任务监控配置。单击下拉箭头可以展开筛选项，支持通过选择报警原因、接收方式、接收人、创建人来过滤搜索结果。
-    -   下方显示搜索结果，会展示任务名称&ID、报警原因、接收方式、接收人、创建人等信息。
+2.  The preceding figure shows the details.
+    -   At the top of the right-side workspace, you can enter keywords in the search box to search for existing task monitoring configurations. Click the drop-down arrow to expand the filtering settings, you can filter the search results by selecting the alert cause, notification method, recipient, and creator.
+    -   The search result is shown below, including the task name and ID, alert cause, notification method, recipient, and creator.
 
-## 开启/关闭任务监控
+## Enable/disable task monitoring
 
-在下方的搜索结果展示区，单击指定任务后面的**监控开关**，可以开启或关闭该任务监控。
+In the list of search results, you can enable or disable monitoring for a specific task by clicking **Monitor Switch**.
 
-## 编辑、删除任务监控
+## Modify and delete the task monitoring configuration
 
-在下方的搜索结果展示区，单击**操作**列的**编辑**按钮，弹出任务监控编辑面板，可以修改报警原因、接收人、接收方式。
+In the list of search results, click **Change** under **Actions**. In the dialog box that appears, you can modify the alert cause, recipient, and notification method.
 
-![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/1389273751/p40773.png)
+![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/136667/156134690840773_en-US.png)
 
-单击**操作**列的**删除**按钮，会弹窗二次确认是否删除。
+Click **Delete** under **Actions**, and a message appears, asking if you want to continue deleting the task monitoring configuration.
 
-![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4175591951/p40774.png)
+![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0347719851/p40774.png)
 
