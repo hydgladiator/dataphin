@@ -1,28 +1,78 @@
-# Configure task monitoring
+---
+keyword: 逻辑表任务
+---
 
-This topic describes how to configure the task monitoring, including search for task monitoring configurations, view existing task monitoring configurations, enable or disable task monitoring, modify, and delete task monitoring configurations.
+# 逻辑表任务
 
-## Search for and view existing task monitoring configurations
+本文为您介绍逻辑表任务模块的功能。
 
-1.  Choose **R&D** \> **Scheduling** \> **Monitoring** \> **Task Monitoring Configuration** to open the configuration page of task monitoring.
+## 页面介绍
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/136667/156134690840772_en-US.png)
+1.  登录[Dataphin控制台](https://dataphin.console.aliyun.com/workingArea)。
+2.  在Dataphin控制台页面，**选择工作区地域**后，单击**进入Dataphin\>\>**。
+3.  进入**逻辑表任务**页面：
 
-2.  The preceding figure shows the details.
-    -   At the top of the right-side workspace, you can enter keywords in the search box to search for existing task monitoring configurations. Click the drop-down arrow to expand the filtering settings, you can filter the search results by selecting the alert cause, notification method, recipient, and creator.
-    -   The search result is shown below, including the task name and ID, alert cause, notification method, recipient, and creator.
+    -   如果您最近一次访问的是**Basic**或**Prod**项目，则您可以通过以下任何一种方式，进入**逻辑表任务**页面：
+        -   1.  单击**运维调度**，或单击**调度运维**后的**进入**。
+2.  单击项目名称后的![test](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2111987951/p104052.png)图标，选择**Dev**项目。
+3.  在数据**开发**运维页面，单击**逻辑表运维**，默认进入**逻辑表任务**页面。
+        -   1.  在Dataphin产品首页，单击顶部菜单栏的**研发**。
+2.  单击项目名称后的![test](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2111987951/p104052.png)图标，选择**Dev**项目。
+3.  在数据**开发**页面，单击顶部菜单栏的**运维**。
+4.  在**运维**页面，单击**逻辑表运维**，默认进入**逻辑表任务**页面。
+    -   如果您最近一次访问的是**Dev**项目，则您可以通过以下任何一种方式，进入**逻辑表任务**页面：
+        -   1.  单击**运维调度**，或单击**调度运维**后的**进入**。
+2.  在**运维**页面，单击**逻辑表运维**，默认进入**逻辑表任务**页面。
+        -   1.  在Dataphin产品首页，单击顶部菜单栏的**研发**。
+2.  在数据**开发**页面，单击顶部菜单栏的**运维**。
+3.  在**运维**页面，单击**逻辑表运维**，默认进入**逻辑表任务**页面。
+    ![ceshi](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4801987951/p103757.png)
 
-## Enable/disable task monitoring
+4.  在**逻辑表任务**页面，左侧功能区用于搜索和展示逻辑表及其内部物理节点。右侧DAG图展示区，默认展示当前逻辑表内包含的所有节点和内部节点间的依赖关系，并在左下角动态展示缩略图。
 
-In the list of search results, you can enable or disable monitoring for a specific task by clicking **Monitor Switch**.
+    ![st](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1901987951/p104580.png)
 
-## Modify and delete the task monitoring configuration
+    |编号|描述|
+    |--|--|
+    |1|第一层为逻辑表。|
+    |2|第二层为逻辑表对应的节点。|
 
-In the list of search results, click **Change** under **Actions**. In the dialog box that appears, you can modify the alert cause, recipient, and notification method.
 
-![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/136667/156134690840773_en-US.png)
+## 查看字段
 
-Click **Delete** under **Actions**, and a message appears, asking if you want to continue deleting the task monitoring configuration.
+1.  在**逻辑表任务**页面左侧功能区，单击需要查看字段的逻辑表。
+2.  将鼠标悬浮在逻辑表对应的节点上，单击![test](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2901987951/p104562.png)图标。
 
-![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0347719851/p40774.png)
+    ![test](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1901987951/p104585.png)
+
+3.  在节点详情页面，查看字段。
+
+## 查看节点代码
+
+1.  在**逻辑表任务**页面左侧功能区，单击需要查看节点代码的逻辑表任务对应的节点。在右侧DAG图展示区，单击或右键单击需要查看代码的节点的![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1755591951/p61856.png)图标后，再单击**查看节点代码**。
+2.  在**节点代码**页面，查看该节点的代码。
+
+## 查看周期任务
+
+1.  在**逻辑表任务**页面左侧功能区，单击需要查看周期任务的逻辑表任务对应的节点。在右侧DAG图展示区，单击或右键单击需要重跑并恢复调度节点的![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1755591951/p61856.png)图标后，再单击**查看周期任务**。
+2.  在**逻辑表任务**下的**离线周期任务**中，查看周期任务。
+
+## 查看周期实例
+
+1.  在**逻辑表任务**页面左侧功能区，单击需要查看周期实例的逻辑表任务对应的节点。在右侧DAG图展示区，单击或右键单击需要重跑并恢复调度节点的![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1755591951/p61856.png)图标后，再选择**查看实例** \> **查看周期实例**。
+2.  在**逻辑表任务**下的**离线周期实例**页面，查看周期实例。
+
+## 查看补数据实例
+
+1.  在**逻辑表任务**页面左侧功能区，单击需要查看补数据实例的逻辑表任务对应的节点。在右侧DAG图展示区，单击或右键单击需要查看补数据实例节点的![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1755591951/p61856.png)图标后，再选择**查看实例** \> **查看补数据实例**。
+2.  在**逻辑表任务**下的**离线补数据实例**页面，查看补数据实例。
+
+## 补数据
+
+1.  在**逻辑表任务**页面左侧功能区，单击需要补数据的逻辑表任务对应的节点。在右侧DAG图展示区，单击或右键单击需要补数据节点的![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1755591951/p61856.png)图标后，再单击**补数据**。
+2.  在**补数据**页面，填写**实例名称**，选择**业务日期**和**选择下游**。
+
+    如果**选择下游**选择为**是**，则需要根据页面提示，选中需要补数据的下游节点。
+
+3.  单击**确定**，完成节点的补数据操作。
 
