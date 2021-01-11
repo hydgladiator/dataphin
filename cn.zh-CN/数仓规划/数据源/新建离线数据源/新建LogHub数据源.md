@@ -14,7 +14,7 @@ keyword: LogHub数据源
 
 1.  登录[Dataphin控制台](https://dataphin.console.aliyun.com/workingArea)。
 
-2.  在Dataphin控制台页面，**选择工作区地域**后，单击**进入Dataphin\>\>**。
+2.  在Dataphin控制台页面，选择工作区地域后，单击**进入Dataphin\>\>**。
 
 3.  进入数仓**规划**页面。
 
