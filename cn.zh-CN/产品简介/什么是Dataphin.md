@@ -67,19 +67,5 @@ Dataphin支持按月购买的付费模式，关于Dataphin的计费标准请参�
 
 ## 相关信息
 
-您可以通过如下信息，进一步了解Dataphin：
-
--   [了解阿里巴巴数据中台。](https://dp.alibaba.com/index?spm=a2c4g.11174283.2.5.6e8b2869wOE4Rh)
--   Dataphin最佳实践：
-    -   [刚入职的数据分析师，如何使用1周的时间完成上千个数据指标的开发？](https://dp.alibaba.com/exchange/article?spm=a215hz.13439221.0.0.4f657dc2GVdEun&articleId=70)
-    -   [如何通过Dataphin构建数据中台以实现新增100万用户？](https://dp.alibaba.com/exchange/article?spm=a215hz.13439221.0.0.4f657dc2GVdEun&articleId=27)
-    -   [Dataphin的代码自动化如何助力商业决策？](https://dp.alibaba.com/exchange/article?spm=a215hz.13439221.0.0.4f657dc2GVdEun&articleId=67)
--   Dataphin使用体验：
-    -   [Dataphin体验系列-功能易用性及界面设计。](https://dp.alibaba.com/exchange/article?spm=a215hz.13439221.0.0.4f657dc2GVdEun&articleId=66)
-    -   [Dataphin体验系列-功能完备性。](https://dp.alibaba.com/exchange/article?spm=a215hz.13439221.0.0.4f657dc2GVdEun&articleId=68)
--   Dataphin功能详解：
-    -   [Dataphin帮助企业构建数据中台系列-萃取数据中心。](https://dp.alibaba.com/exchange/article?spm=a215hz.13439221.0.0.4f657dc2GVdEun&articleId=22)
-    -   [Dataphin数据服务系列-API配置、管理和消费。](https://dp.alibaba.com/exchange/article?spm=a215hz.13439221.0.0.4f657dc2GVdEun&articleId=14)
-    -   [Dataphin支持哪些数据源？](https://dp.alibaba.com/exchange/article?spm=a215hz.13439221.0.0.4f657dc2GVdEun&articleId=20)
-    -   [Dataphin功能解读。](https://dp.alibaba.com/exchange/article?spm=a215hz.13439221.0.0.4f657dc2GVdEun&articleId=69)
+进一步了解Dataphin，请参见[了解阿里巴巴数据中台。](https://dp.alibaba.com/index?spm=a2c4g.11174283.2.5.6e8b2869wOE4Rh)
 
