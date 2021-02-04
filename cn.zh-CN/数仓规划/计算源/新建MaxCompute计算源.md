@@ -4,7 +4,7 @@ keyword: MaxCompute计算源
 
 # 新建MaxCompute计算源
 
-MaxCompute计算源用于绑定Dataphin项目空间和MaxCompute项目，为Dataphin项目提供处理离线计算任务的计算源。如果Dataphin系统的计算引擎设置为MaxCompute，则只有项目空间添加了MaxCpmpute计算源，才支持规范建模、即席查询、MAXC任务、通用脚本等功能。本文为您介绍如何新建MaxCompute计算源。
+MaxCompute计算源用于绑定Dataphin项目空间和MaxCompute项目，为Dataphin项目提供处理离线计算任务的计算源。如果Dataphin系统的计算引擎设置为MaxCompute，则只有项目空间添加了MaxCompute计算源，才支持规范建模、即席查询、MAXC任务、通用脚本等功能。本文为您介绍如何新建MaxCompute计算源。
 
 已设置Dataphin计算引擎为MaxCompute，请参见[计算设置](/cn.zh-CN/全局管理/管理中心/计算设置.md)。
 
