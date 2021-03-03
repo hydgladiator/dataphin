@@ -33,7 +33,7 @@ DataX支持同步数据的数据源包括 MySQL、Oracle、SQL Server、PostgreS
 
     RDS ID为RDS MySQL的实例ID。
 
--   添加Dataphin的IP至RDS MySQL的白名单，详情请参见[设置白名单](/cn.zh-CN/RDS MySQL 数据库/快速入门/设置白名单.md)。
+-   添加Dataphin的IP至RDS MySQL的白名单，详情请参见[设置IP白名单](/cn.zh-CN/RDS MySQL 数据库/快速入门/设置白名单/设置IP白名单.md)。
     -   如果数据源使用了VPC网络，则Dataphin的IP白名单见下表。
 
         |地域|IP白名单|
@@ -208,7 +208,7 @@ DataX支持同步数据的数据源包括 MySQL、Oracle、SQL Server、PostgreS
     ![geg](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1106726061/p184810.png)
 
 
-## 调度运维
+## （可选）调度运维
 
 如果您需要定期同步数据，则需要配置DataX同步任务的调度参数并发布至生产环境，参与生产环境的调度。
 
