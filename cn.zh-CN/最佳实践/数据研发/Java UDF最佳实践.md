@@ -2,7 +2,7 @@
 
 为了满足复杂的数据开发场景，Dataphin智能研发版支持自定义Java UDF函数。本教程以Java自带函数（toLowerCase）为例，为您介绍如何基于Dataphin自定义Java UDF函数。
 
-下载[JAR包](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/30259/cn_zh/1609818319666/javaudf.jar)。
+下载[JAR包](https://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/30259/cn_zh/1609818319666/javaudf.jar)。
 
 本教程基于下载的JAR包自定义的Java UDF函数，实现大写字母转换为小写字母。您也可以编写Java UDF代码，以实现更多的功能，请参见[IntelliJ IDEA Java UDF开发最佳实践](/cn.zh-CN/最佳实践/数据开发/IntelliJ IDEA Java UDF开发最佳实践.md)。
 
