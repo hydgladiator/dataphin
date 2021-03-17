@@ -125,7 +125,7 @@ public final class javaudf extends UDF {
     ![fagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8373289061/p208840.png)
 
 
-## 调度运维
+## （可选）调度运维
 
 如果需要定期的运行SQL任务，则需要配置SQL任务的调度参数并发布至生产环境，参与生产环境的调度。
 
