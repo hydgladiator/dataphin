@@ -2,7 +2,7 @@
 
 DataX是异构数据源离线同步的工具，支持多种异构数据源之间高效的数据同步。Dataphin系统内嵌了DataX组件，支持通过构建Shell任务调用DataX，实现数据同步。本教程以MySQL数据库为例，为您介绍基于Dataphin如何调用DataX同步数据。
 
-开通RDS MySQL，详情请参见[RDS实例购买指南](/cn.zh-CN/云数据库 RDS 快速入门/RDS实例购买指南.md)。创建RDS MySQL实例过程中，需要您记录数据库名称、用户名和密码。
+开通RDS MySQL，详情请参见[RDS实例购买指南](/cn.zh-CN/快速入门/RDS实例购买指南.md)。创建RDS MySQL实例过程中，需要您记录数据库名称、用户名和密码。
 
 DataX支持同步数据的数据源包括 MySQL、Oracle、SQL Server、PostgreSQL、HDFS、Hive、HBase等。有关DataX更多信息，请参见[DataX](https://github.com/alibaba/DataX?spm=a2c4g.11186623.2.22.6ee76324XCkyEG)。
 
@@ -29,7 +29,7 @@ DataX支持同步数据的数据源包括 MySQL、Oracle、SQL Server、PostgreS
     create table 'datax_test2'( 'area' varchar(255),'province' varchar(255) );
     ```
 
--   添加访问地址外网地址和端口3306至项目空间的沙箱白名单，;详情请参见[新建项目](/cn.zh-CN/数仓规划/项目管理/新建项目.md)。
+-   添加访问地址外网地址和端口3306至项目空间的沙箱白名单，详情请参见[添加沙箱白名单](/cn.zh-CN/数仓规划/管理项目空间的权限和计算源.md)。
 
     RDS ID为RDS MySQL的实例ID。
 
