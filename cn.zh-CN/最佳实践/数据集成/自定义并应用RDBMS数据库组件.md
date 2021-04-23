@@ -157,7 +157,7 @@ RDBMS数据库即关系型数据库，包括MySQL、Oracle、SQL Server、Postgr
     |**用户名**|登录数据库的用户名。|
     |**密码**|登录数据库的密码。|
 
-    **说明：** 自定义类型数据源不支持链接测试，请您务必保证数据源连接信息的准确性。
+    **说明：** 自定义类型数据源不支持连接测试，请您务必保证数据源连接信息的准确性。
 
 6.  单击**确定**。
 
@@ -193,7 +193,7 @@ RDBMS数据库即关系型数据库，包括MySQL、Oracle、SQL Server、Postgr
 
         ![faga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2066898161/p266063.png)
 
-    3.  鼠标选停至**test\_rdbms\_mysql\_输入**组件框内右键单击，单击**属性配置**。
+    3.  鼠标选停至**test\_rdbms\_mysql\_输入**组件框内右键单击后，单击**属性配置**。
 
     4.  在**test\_rdbms\_mysql\_输入输入配置**对话框，配置输入参数。
 
@@ -222,7 +222,7 @@ RDBMS数据库即关系型数据库，包括MySQL、Oracle、SQL Server、Postgr
 
         ![fagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3066898161/p263210.png)
 
-    7.  鼠标选停至**test\_rdbms\_mysql\_输出**组件框内右键单击，单击**属性配置**。
+    7.  鼠标选停至**test\_rdbms\_mysql\_输出**组件框内右键单击后，单击**属性配置**。
 
     8.  在**test\_rdbms\_mysql\_输出输出配置**对话框，配置输出参数。
 
