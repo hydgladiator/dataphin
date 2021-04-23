@@ -20,7 +20,7 @@ RDBMS数据库即关系型数据库，包括MySQL、Oracle、SQL Server、Postgr
 |步骤|描述|
 |--|--|
 |[步骤一：下载自定义MySQL数据库组件的驱动](#section_o6r_tey_soe)|获取自定义MySQL数据库组件驱动。|
-|[步骤二：配置网络和创建数据表](#section_1sc_acd_hl5)|在您开始自定义并应用RDBMS数据库组件前，需要获取实例的外网地址、创建同步数据的源表和目标表、实现RDS MySQL实例和Dataphin之间的网络互通。|
+|[步骤二：配置网络和创建数据表](#section_1sc_acd_hl5)|在您开始自定义并应用RDBMS数据库组件前，需要配置RDS MySQL实例和Dataphin间的网络，及创建同步数据的源表和目标表。|
 |[步骤三：创建自定义组件](#section_cau_eug_2kr)|自定义组件的类型为**test\_rdbms\_mysql**。完成定义后，即可在组件库的开发模块下查询到自定义的组件。|
 |[步骤四：创建数据源实例](#section_ca2_5zq_wnw)|基于自定义的组件类型（**test\_rdbms\_mysql**），创建**TEST\_RDBMS\_MYSQL**类型的数据源实例。完成创建数据源实例后，即可将RDS MySQL实例的业务数据引入至Dataphin实例。|
 |[步骤五：创建离线管道任务](#section_ee6_xy6_9ld)|基于自定义的组件类型（**test\_rdbms\_mysql**）和数据源实例（**test\_rdbms\_mysql**），创建离线管道任务。完成离线管道任务的创建后，即可运行离线管道任务，以实现数据的集成（同步数据）。|
