@@ -278,7 +278,7 @@ RDBMS数据库即关系型数据库，包括MySQL、Oracle、SQL Server、Postgr
 
     5.  单击左侧导航栏的**发布记录列表**。在**发布记录列表**页面，查看离线管道任务的发布状态为**发布成功**即可。
 
-        ![fagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4066898161/p265441.png)
+        ![fagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3957419161/p265441.png)
 
 
 ## 步骤六：生产环境中运行离线管道任务
