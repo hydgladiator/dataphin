@@ -6,7 +6,7 @@ keyword: 自定义并应用RDBMS数据库组件
 
 为了满足不同业务场景数据集成的诉求，Dataphin支持用户自定义当前系统不支持的RDBMS数据库（关系型数据库）类型的组件。您只需要准备关系型数据库的驱动，即可自定义RDBMS数据库类型的组件。本教程以MySQL为例，为您介绍如何自定义RDBMS数据库类型的组件。
 
--   已开通RDS MySQL实例，且网络类型为专有网络（VPC）。如何开通RDS MySQL实例，请参见[创建RDS MySQL实例](/cn.zh-CN/RDS MySQL 数据库/快速入门/创建RDS MySQL实例.md)。
+-   已开通RDS MySQL实例，且RDS MySQL实例的网络类型为专有网络。如何开通RDS MySQL实例，请参见[创建RDS MySQL实例](/cn.zh-CN/RDS MySQL 数据库/快速入门/创建RDS MySQL实例.md)。
 -   已创建RDS MySQL实例的数据库和账号，创建过程中需要您记录数据库名称、用户名和密码。如何创建数据库和账号，请参见[创建数据库和账号](/cn.zh-CN/RDS MySQL 数据库/快速入门/创建数据库和账号.md)。
 
 RDBMS数据库即关系型数据库，包括MySQL、Oracle、SQL Server、PostgreSQL、Vertica、DRDS、DB2、OceanBase、PolarDB、SAP HANA和TeraData。本教程以MySQL为例，带您体验自定义及应用RDBMS数据库类型的组件。
@@ -20,63 +20,59 @@ RDBMS数据库即关系型数据库，包括MySQL、Oracle、SQL Server、Postgr
 |步骤|描述|
 |--|--|
 |[步骤一：下载自定义MySQL数据库组件的驱动](#section_o6r_tey_soe)|获取自定义MySQL数据库组件驱动。|
-|[步骤二：配置网络和创建数据表](#section_1sc_acd_hl5)|在您开始自定义并应用RDBMS数据库组件前，需要配置RDS MySQL实例和Dataphin间的网络，及创建同步数据的源表和目标表。|
-|[步骤三：创建自定义组件](#section_cau_eug_2kr)|自定义组件的类型为**test\_rdbms\_mysql**。完成定义后，即可在组件库的开发模块下查询到自定义的组件。|
-|[步骤四：创建数据源实例](#section_ca2_5zq_wnw)|基于自定义的组件类型（**test\_rdbms\_mysql**），创建**TEST\_RDBMS\_MYSQL**类型的数据源实例。完成创建数据源实例后，即可将RDS MySQL实例的业务数据引入至Dataphin实例。|
-|[步骤五：创建离线管道任务](#section_ee6_xy6_9ld)|基于自定义的组件类型（**test\_rdbms\_mysql**）和数据源实例（**test\_rdbms\_mysql**），创建离线管道任务。完成离线管道任务的创建后，即可运行离线管道任务，以实现数据的集成（同步数据）。|
-|[步骤六：生产环境中运行离线管道任务](#section_idc_cq7_3pq)|在生产环境运行离线管道任务，保障生产环境业务数据的正常产出。|
+|[步骤二：连通RDS MySQL实例与Dataphin间的网络](#section_1sc_acd_hl5)|在您开始自定义并应用RDBMS数据库组件前，首先需要连通RDS MySQL实例和Dataphin间的网络。|
+|[步骤三：创建数据同步的源表和目标表](#section_8xd_c1g_opd)|登录至RDS MySQL实例，创建本教程中用于数据同步的源表和目标表。|
+|[步骤四：创建自定义组件](#section_cau_eug_2kr)|自定义组件的类型为**test\_rdbms\_mysql**。完成定义后，即可在组件库的开发模块下查询到自定义的组件。|
+|[步骤五：创建数据源实例](#section_ca2_5zq_wnw)|基于自定义的组件类型（**test\_rdbms\_mysql**），创建**TEST\_RDBMS\_MYSQL**类型的数据源实例。完成创建数据源实例后，即可将RDS MySQL实例的业务数据引入至Dataphin实例。|
+|[步骤六：创建离线管道任务](#section_ee6_xy6_9ld)|基于自定义的组件类型（**test\_rdbms\_mysql**）和数据源实例（**test\_rdbms\_mysql**），创建离线管道任务。完成离线管道任务的创建后，即可运行离线管道任务，以实现数据的集成（同步数据）。|
+|[步骤七：生产环境中运行离线管道任务](#section_idc_cq7_3pq)|在生产环境运行离线管道任务，保障生产环境业务数据的正常产出。|
 
 ## 步骤一：下载自定义MySQL数据库组件的驱动
 
 请下载MySQL数据库的[驱动](https://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/206129/cn_zh/1618542516387/mysql-connector-java-5.1.47.jar)。
 
-## 步骤二：配置网络和创建数据表
+## 步骤二：连通RDS MySQL实例与Dataphin间的网络
 
--   连通RDS MySQL实例与Dataphin实例间的网络。
-    -   添加RDS MySQL实例的外网地址和端口至Dataphin项目空间的沙箱白名单：
-        1.  获取RDS MySQL实例的外网地址、端口。
+1.  申请RDS MySQL实例的外网地址。如何申请外网地址，请参见[申请或释放外网地址](https://icms.alibaba-inc.com/content/rds/f72efd4?l=1&m=2188&n=7817)。
 
-            进入[数据库连接](https://rdsnext.console.aliyun.com/rdsList/basic)页面，获取RDS MySQL实例的外网地址和端口。
+2.  在[数据库连接](https://icms.alibaba-inc.com/content/rds/f72efd4?l=1&m=2188&n=7817)页面，获取RDS MySQL实例的外网地址和端口。
 
-            ![faga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5508909161/p267366.png)
+    ![faga ](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5508909161/p267366.png)
 
-        2.  添加RDS MySQL实例的外网地址和端口至Dataphin项目空间的沙箱白名单。如何添加沙箱白名单，请参见[添加沙箱白名单](/cn.zh-CN/数仓规划/管理项目空间的权限和计算源.md)。
-    -   添加Dataphin的IP至RDS MySQL实例的白名单。如何添加Dataphin的IP至RDS MySQL实例的白名单，请参见[设置IP白名单](/cn.zh-CN/RDS MySQL 数据库/快速入门/设置白名单/设置IP白名单.md)。
+3.  添加RDS MySQL实例的外网地址和端口至Dataphin项目空间的沙箱白名单。如何添加沙箱白名单，请参见[添加沙箱白名单](https://icms.alibaba-inc.com/content/dataphin/fdee72?l=1&m=7888&n=149037)。
 
-        |地域|IP白名单|
-        |--|-----|
-        |华东2（上海）|100.104.228.128/26、100.104.115.192/26|
-        |华南1（深圳）|100.104.48.128/26|
-        |华北2（北京）|100.104.238.64/26|
-        |华东2（上海）、华南1（深圳）、华北2（北京）|100.104.0.0/16|
+4.  添加`0.0.0.0/0`至RDS MySQL实例的白名单。如何添加白名单，请参见[设置IP白名单](https://icms.alibaba-inc.com/content/rds/f72efd4?l=1&m=2188&n=7816)。
 
--   创建同步数据的源数据表和目标数据表。
-
-    使用命令行方式连接MySQL实例，连接后创建同步数据的源数据表和目标数据表。如何连接MySQL实例，请参见[方法三：使用命令行方式连接实例](/cn.zh-CN/RDS MySQL 数据库/快速入门/连接MySQL实例.md)。
-
-    -   创建源数据表的代码示例如下。
-
-        ```
-        create table xin_test_scr2
-        (
-        id string,
-        name string
-        );
-        insert into xin_test_scr2 values('1001','huayu1'),('1002','huayuyu2'),('1003','huayuyu3'),('1004','huayuyu4'),('1005','huayuyu5'),('1006','huayuyu6'),('1007','huayuyu7'),('1008','huayuyu8'),('1009','huayuyu9'),('1010','huayuyu10'),('1011','huayuyu11'),('1012','huayuyu12'),('1013','huayuyu13'),('1014','huayuyu14'),('1015','huayuyu15'),('1016','huayuyu16'),('1017','huayuyu17'),('1018','huayuyu18'),('1019','huayuyu19'),('1021','huayuyu21'),('10022','huayuyu22'),('1023','huayuyu23');
-        ```
-
-    -   创建目标数据表的代码示例如下。
-
-        ```
-        create table xin_test_det_1
-        (    
-        id string,    
-        name string
-        );
-        ```
+    **说明：** 完成数据同步后，请立即删除`0.0.0.0/0`。
 
 
-## 步骤三：创建自定义组件
+## 步骤三：创建数据同步的源表和目标表
+
+使用命令行方式连接RDS MySQL实例，请参见[方法三：使用命令行连接实例](https://icms.alibaba-inc.com/content/rds/f72efd4?l=1&m=2188&n=7823)。创建同步数据的源数据表和目标数据表：
+
+1.  创建源数据表的代码示例如下。
+
+    ```
+    create table xin_test_scr2
+    (
+    id string,
+    name string
+    );
+    insert into xin_test_scr2 values('1001','huayu1'),('1002','huayuyu2'),('1003','huayuyu3'),('1004','huayuyu4'),('1005','huayuyu5'),('1006','huayuyu6'),('1007','huayuyu7'),('1008','huayuyu8'),('1009','huayuyu9'),('1010','huayuyu10'),('1011','huayuyu11'),('1012','huayuyu12'),('1013','huayuyu13'),('1014','huayuyu14'),('1015','huayuyu15'),('1016','huayuyu16'),('1017','huayuyu17'),('1018','huayuyu18'),('1019','huayuyu19'),('1021','huayuyu21'),('10022','huayuyu22'),('1023','huayuyu23');
+    ```
+
+2.  创建目标数据表的代码示例如下。
+
+    ```
+    create table xin_test_det_1
+    (    
+    id string,    
+    name string
+    );
+    ```
+
+
+## 步骤四：创建自定义组件
 
 1.  登录[Dataphin控制台](https://dataphin.console.aliyun.com/workingArea)。
 
@@ -132,7 +128,7 @@ RDBMS数据库即关系型数据库，包括MySQL、Oracle、SQL Server、Postgr
         ![dagga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3066898161/p265400.png)
 
 
-## 步骤四：创建数据源实例
+## 步骤五：创建数据源实例
 
 1.  在**数据集成**页面，鼠标选停至![afgagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3066898161/p264656.png)图标后，单击**规划**。
 
@@ -170,7 +166,7 @@ RDBMS数据库即关系型数据库，包括MySQL、Oracle、SQL Server、Postgr
 6.  单击**确定**。
 
 
-## 步骤五：创建离线管道任务
+## 步骤六：创建离线管道任务
 
 1.  在**数据源**页面，鼠标选停至![afgagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3066898161/p264656.png)图标后，单击**研发**。
 
@@ -289,7 +285,7 @@ RDBMS数据库即关系型数据库，包括MySQL、Oracle、SQL Server、Postgr
         ![fagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3957419161/p265441.png)
 
 
-## 步骤六：生产环境中运行离线管道任务
+## 步骤七：生产环境中运行离线管道任务
 
 1.  在数据**集成**页面，单击顶部菜单栏的**运维**。
 
