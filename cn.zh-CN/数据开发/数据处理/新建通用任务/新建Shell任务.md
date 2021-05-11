@@ -61,25 +61,14 @@ Shell任务中引用到的JSON资源包需提前创建，因此需要您在资�
 
     3.  在**代码编写**页面，编写Shell离线计算任务的代码。
 
-        代码示例如下。
-
-        ```
-        @required_resource{required_memory=2Gb;required_cpus=1.0}
-        @resource_reference{"datax.json"}
-        python $DATA_HOME/bin/datax.py --jvm '-Xms2g -Xmx2g' datax.json
-        ```
-
-        其中，
-
-        -   required\_resource\{\}，自定义配置所需的资源大小。
-        -   系统已内置DataX\_Home为DataX的安装目录，DataX入口在DataX安装的bin文件下。
-        -   `--jvm '-Xms2g -Xmx2g'`指定DataX实际运行时的JVM内存，建议您将内存的大小设置成与required\_resource中的required\_memory一致。
-        对于所需资源较小的DataX任务，您可以使用如下代码示例。
+        代码如下。
 
         ```
         @resource_reference{"datax.json"}
-        python $DATA_HOME/bin/datax.py datax.json
+        python $DATAX_HOME/bin/datax.py datax.json #Dataphin系统已内置DataX的安装目录为DATAX_HOME/bin/datax.py。
         ```
+
+        其中，resource\_reference\{\}用于调用已上传的**datax.json**资源文件。
 
     4.  检查代码。
 
