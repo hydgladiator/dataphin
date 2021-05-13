@@ -4,26 +4,30 @@ keyword: HDFS数据源
 
 # 新建HDFS数据源
 
-新建HDFS数据源用于连通HDFS数据源与Dataphin实例。如果业务数据来源于HDFS数据源，则在您开始基于Dataphin开发数据前，需要新建HDFS数据源。本文为您介绍如何新建HDFS类型的数据源。
+本文为您介绍如何新建HDFS类型的数据源。
 
-已获取HDFS的**DefaultFS**，且需要保证Dataphin和HDFS的DataNode、NameNode的网络连通性。目前，HDFS不支持VPC网络。
+-   已获取HDFS的**JDBC URL**。
+-   已获取HDFS的**DefaultFS**。
 
-1.  请参见[入口介绍](/cn.zh-CN/数仓规划/概述.md)，进入数仓规划页面。
+1.  登录[Dataphin控制台](https://dataphin.console.aliyun.com/workingArea)。
 
-2.  在左侧导航栏中，单击**数据源**。
+2.  在Dataphin控制台页面，选择工作区地域后，单击**进入Dataphin\>\>**。
 
-3.  在**数据源**页面，单击右上方的**新建数据源**。
+3.  进入数仓**规划**页面。
 
-4.  在**新建数据源**对话框的**文件**区域，选择**HDFS**。
+    -   在Dataphin首页，单击顶部菜单栏的**规划**。
+    -   在Dataphin首页，单击顶部菜单栏下方的**智能数仓规划**。
+4.  在左侧导航栏中，单击**数据源**。
 
-    如果您最近使用过HDFS，也可以在**最近使用**区域选择HDFS。同时，您也可以在快搜索框中，输入HDFS的关键词，快速筛选。
+5.  在**数据源**页面，单击右上方的**新建数据源**。
 
-5.  在**新建HDFS数据源**对话框中，填写数据源信息。
+6.  在**新建数据源**对话框中，填写数据源信息。
 
-    ![gaaga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5129918061/p202658.png)
+    ![fa'gafaga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8755209951/p95495.png)
 
     |参数|描述|
     |--|--|
+    |**数据源类型**|选择数据源类型为**HDFS**。|
     |**数据源名称**|填写数据源名称。数据源名称由汉字、数字、字母、下划线（\_）或短划线（-）组合组成。|
     |**数据源描述**|填写对数据源简单的描述。|
     |**数据源配置**|配置数据源：     -   如果开发模式是Basic模式，则选择**生产数据源**。
@@ -39,10 +43,8 @@ keyword: HDFS数据源
     -   **Keytab File**：基于KDC加密方式，生成的解密密钥文件。
     -   **Principal**：基于KDC加密方式，认证的Principal名。 |
 
-6.  单击**测试连接**。
+7.  单击**测试连接**。
 
-7.  测试成功后，单击**确定**，完成HDFS数据源的创建。
-
-    完成HDFS数据源的创建后，即可使用HDFS的业务数据开发数据。
+8.  测试成功后，单击**确定**，完成HDFS数据源的创建。
 
 
