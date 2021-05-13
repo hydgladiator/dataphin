@@ -42,8 +42,8 @@ keyword: MaxCompute数据源
 
 **说明：** 系统支持配置**生产数据源**和**开发数据源**为相同的数据源，也可以配置为不同的数据源。 |
     |**生产数据源**或**生产+开发数据源**|**Endpoint**|填写`http://service.cn.maxcompute.aliyun.com/api`。|
-    |**Project Name**|填写Dataworks创建的MaxCompute（ODPS）项目名称。|
-    |**Access ID**|访问密钥中的AccessKey ID，您可以通过[用户信息管理](https://usercenter.console.aliyun.com/)页面获取。**说明：** 如果您使用的是子账号，则需要获取主账号的**Access ID**和**Access Key**。 |
+    |**Project Name**|填写DataWorks创建的MaxCompute（ODPS）项目名称。|
+    |**Access ID**|访问密钥中的AccessKey ID，您可以通过[用户信息管理](https://usercenter.console.aliyun.com/)页面获取。|
     |**Access Key**|访问密钥中的AccessKey Secret，您可以通过[用户信息管理](https://usercenter.console.aliyun.com/)页面获取。|
 
 7.  单击**测试连接**。
