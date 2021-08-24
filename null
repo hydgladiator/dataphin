@@ -1,12 +1,12 @@
 ---
-keyword: ElasticSearch数据源
+keyword: MongoDB数据源
 ---
 
-# 新建ElasticSearch数据源
+# 新建MongoDB数据源
 
-本文为您介绍如何新建ElasticSearch类型的数据源。
+本文为您介绍如何新建MongoDB类型的数据源。
 
--   已获取业务数据源的**ES URL**。
+-   已获取业务数据源的**JDBC URL**。
 -   已获取鉴权的**用户名**和**密码**。
 
 1.  登录[Dataphin控制台](https://dataphin.console.aliyun.com/workingArea)。
@@ -25,11 +25,11 @@ keyword: ElasticSearch数据源
 
 6.  在**新建数据源**对话框中，填写数据源信息。
 
-    ![fafafa](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/2278209951/p93932.png)
+    ![fagaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/1855209951/p93933.png)
 
     |参数|描述|
     |--|--|
-    |**数据源类型**|选择数据源类型为**ELASTIC\_SEARCH**。|
+    |**数据源类型**|选择数据源类型为**MONGODB**。|
     |**数据源名称**|填写数据源名称。数据源名称由汉字、数字、字母、下划线（\_）或短划线（-）组合组成。|
     |**数据源描述**|填写对数据源简单的描述。|
     |**数据源配置**|选择新建数据源所属的项目：     -   如果您的开发模式是Basic模式，则新建数据源时选择**生产数据源**。
@@ -39,12 +39,12 @@ keyword: ElasticSearch数据源
 ![fagaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/6278209951/p93912.png)
 
         -   单击**生产+开发数据源**，完成生产环境和开发环境的数据源创建。 |
-    |**ES URL**|填写数据库的连接地址。|
+    |**JDBC URL**|填写数据库的JDBC连接地址。|
     |**用户名**|填写数据库的登录**用户名**。|
-    |**密码**|数据库的登录**密码**。|
+    |**密码**|填写数据库的登录**密码**。|
 
 7.  数据源信息填写完成后，单击**测试连接**。
 
-8.  测试成功后，单击**确定**，完成ElasticSearch数据源的创建。
+8.  测试成功后，单击**确定**，完成MongoDB数据源的创建。
 
 
