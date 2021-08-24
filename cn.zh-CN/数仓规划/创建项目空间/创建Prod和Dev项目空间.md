@@ -9,7 +9,7 @@ keyword: 创建Prod和Dev项目空间
 -   如果您需要研发流批一体任务，则在创建项目空间前需要完成Flink计算源的创建，请参见[新建Flink计算源](/cn.zh-CN/数仓规划/计算源/新建Flink计算源.md)。
 -   如果您选择的Dataphin的计算引擎为AnalyticDB for PostgreSQL，且数据研发过程中需要使用数据集成、即席查询、AnalyticDB for PostgreSQL的SQL计算任务等功能，则在创建项目空间前需要完成AnalyticDB for PostgreSQL计算源的创建，请参见[新建AnalyticDB For PostgreSQL计算源](/cn.zh-CN/数仓规划/计算源/新建AnalyticDB For PostgreSQL计算源.md)。
 -   如果您选择的Dataphin的计算引擎为MaxCompute，且数据研发过程中需要使用规范建模、即席查询、MaxCompute计算任务等功能，则在创建项目空间前需要完成MaxCompute计算源的创建，请参见[新建MaxCompute计算源](/cn.zh-CN/数仓规划/计算源/新建MaxCompute计算源.md)。
--   Dataphin支持添加Hologres加速计算源至已绑定MaxCompute计算源的项目，加速数据服务的查询速度。如果您需要加速业务数据的查询速度，则在创建项目空间前需要创建加速计算源， 详情请参见[新建加速计算源]()。
+-   Dataphin支持添加Hologres加速计算源至已绑定MaxCompute计算源的项目，加速数据服务的查询速度。如果您需要加速业务数据的查询速度，则在创建项目空间前需要创建加速计算源， 详情请参见[新建加速计算源](/cn.zh-CN/数仓规划/计算源/新建加速计算源.md)。
 
 Dataphin支持两种开发模式的项目空间。
 
