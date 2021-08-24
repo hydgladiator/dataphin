@@ -76,7 +76,7 @@ Dataphin支持两种开发模式的项目空间。
 
 1.  选中需要添加的**计算源类型**。
 
-计算源类型根据您初始化系统选择的计算引擎而不同。系统支持的计算类型包括MaxCompute、Hologres、Flink和AnalyticDB for PostgreSQL。
+计算源类型根据您初始化系统选择的计算引擎而不同。系统支持的计算类型包括MaxCompute、Flink、Hologres、AnalyticDB for PostgreSQL。
 
 2.  添加与计算类型匹配的计算源。
 
