@@ -7,7 +7,7 @@ keyword: [输出组件, AnalyticDB for PostgreSQL]
 AnalyticDB for PostgreSQL输出组件用于向AnalyticDB for PostgreSQL数据源写入数据。同步其他数据源的数据至AnalyticDB for PostgreSQL数据源的场景中，完成源数据的信息配置后，需要配置AnalyticDB for PostgreSQL输出组件的目标数据源。本文为您介绍如何配置AnalyticDB for PostgreSQL输出组件。
 
 -   获取待同步写的AnalyticDB for PostgreSQL相关信息：
-    -   如何创建数据源，请参见[t1882929.md\#](/cn.zh-CN/数仓规划/数据源/关系型数据源/创建AnalyticDB for PostgreSQL数据源.md)。
+    -   如何创建数据源，请参见[创建AnalyticDB for PostgreSQL数据源](/cn.zh-CN/数仓规划/数据源/关系型数据源/创建AnalyticDB for PostgreSQL数据源.md)。
     -   如何申请数据源同步写权限，请参见[管理数据源权限]()。
 -   已为AnalyticDB for PostgreSQL数据源创建数据表。具体操作，请参见[数据表管理](/cn.zh-CN/数据管理/数据表管理.md)。
 
