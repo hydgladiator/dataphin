@@ -7,8 +7,9 @@ keyword: 创建Basic项目空间
 为了保障数据生产便捷性及敏捷管理数据研发流程，Dataphin支持创建独立灵活、开发与运维一体的项目空间（Basic项目）。本文为您介绍如何创建Basic项目空间。
 
 -   如果您需要研发流批一体任务，则在创建项目空间前需要完成Flink计算源的创建，请参见[新建Flink计算源](/cn.zh-CN/数仓规划/计算源/新建Flink计算源.md)。
--   如果您选择的Dataphin的计算引擎为AnalyticDB for PostgreSQL，且数据研发过程中需要使用数据集成、即席查询、AnalyticDB for PostgreSQL的SQL计算任务等功能，则在创建项目空间前需要完成ADB for PostgreSQL计算源的创建，请参见[新建AnalyticDB For PostgreSQL计算源](/cn.zh-CN/数仓规划/计算源/新建AnalyticDB For PostgreSQL计算源.md)。
+-   如果您选择的Dataphin的计算引擎为AnalyticDB for PostgreSQL，且数据研发过程中需要使用数据集成、即席查询、AnalyticDB for PostgreSQL的SQL计算任务等功能，则在创建项目空间前需要完成AnalyticDB for PostgreSQL计算源的创建，请参见[新建AnalyticDB For PostgreSQL计算源](/cn.zh-CN/数仓规划/计算源/新建AnalyticDB For PostgreSQL计算源.md)。
 -   如果您选择的Dataphin的计算引擎为MaxCompute，且数据研发过程中需要使用规范建模、即席查询、MaxCompute计算任务等功能，则在创建项目空间前需要完成MaxCompute计算源的创建，请参见[新建MaxCompute计算源](/cn.zh-CN/数仓规划/计算源/新建MaxCompute计算源.md)。
+-   Dataphin支持添加Hologres加速计算源至已绑定MaxCompute计算源的项目，加速数据服务的查询速度。如果您需要加速业务数据的查询速度，则在创建项目空间前需要创建加速计算源， 详情请参见[新建加速计算源](/cn.zh-CN/数仓规划/计算源/新建加速计算源.md)。
 
 Dataphin支持两种开发模式的项目空间。
 
@@ -16,8 +17,8 @@ Dataphin支持两种开发模式的项目空间。
 |-------|--|
 |Dev-Prod模式|完成项目空间的创建后，系统默认生成了开发环境（Dev项目）和生产环境（Prod项目）。Prod项目保障了生产环境项目中的数据安全。如果您管理诉求较强，数据研发人员较多且能力及分工明确，数据计算存储预算较高，推荐此模式。 Prod项目和Dev项目的更多信息，请参见[创建Prod和Dev项目空间](/cn.zh-CN/数仓规划/创建项目空间/创建Prod和Dev项目空间.md)。
 
-![fagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7897996161/p256008.png) |
-|Basic模式|完成项目空间的创建后，系统默认生成了Basic项目（开发和生产一体的项目）。Basic项目的数据生产过程稳定且便捷。如果您关注数据研发效率，研发人员职能边界模糊，计算存储预算有限制，推荐此模式。![vaga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7897996161/p256027.png)
+![fagag](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/7897996161/p256008.png) |
+|Basic模式|完成项目空间的创建后，系统默认生成了Basic项目（开发和生产一体的项目）。Basic项目的数据生产过程稳定且便捷。如果您关注数据研发效率，研发人员职能边界模糊，计算存储预算有限制，推荐此模式。![vaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/7897996161/p256027.png)
 
 **说明：**
 
@@ -67,7 +68,7 @@ Dataphin支持两种开发模式的项目空间。
 
 在**新建项目**页面的**基本设置**区域，配置参数。
 
-![fgsaga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4019327161/p258653.png)
+![fgsaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/4019327161/p258653.png)
 
 |参数|描述|
 |--|--|
@@ -75,7 +76,7 @@ Dataphin支持两种开发模式的项目空间。
 
 1.  选中需要添加的**计算源类型**。
 
-计算源类型根据您初始化系统选择的计算引擎而不同。系统支持的计算类型包括MaxCompute、Flink和AnalyticDB for PostgreSQL。
+计算源类型根据您初始化系统选择的计算引擎而不同。系统支持的计算类型包括MaxCompute、Hologres、Flink和AnalyticDB for PostgreSQL。
 
 2.  添加与计算类型匹配的计算源。
 
@@ -90,7 +91,7 @@ Dataphin支持两种开发模式的项目空间。
 
 在**新建项目**页面的**命名空间**区域，配置参数。
 
-![dcf](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4019327161/p258654.png)
+![dcf](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/4019327161/p258654.png)
 
 |参数|描述|
 |--|--|
@@ -104,7 +105,7 @@ Dataphin支持两种开发模式的项目空间。
 
 1.  在**其他设置**的**沙箱白名单**区域，添加该项目空间下输入Shell、Python任务需要访问的IP地址或域名。
 
-    ![gaga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9846725161/p246583.png)
+    ![gaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/9846725161/p246583.png)
 
     1.  单击**新建**。
 
@@ -112,18 +113,18 @@ Dataphin支持两种开发模式的项目空间。
 
         **说明：** 必须填写可以被访问到的IP地址或域名。
 
-    3.  单击![gagaga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9846725161/p246566.png)图标。
+    3.  单击![gagaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/9846725161/p246566.png)图标。
 
 2.  单击**确定**，Shell、Python任务可以访问对应的IP地址或域名。
 
-    对于已添加的沙箱白名单，您也可以单击**操作**列下的![gagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9846725161/p246584.png)图标，删除后项目空间下的Shell、Python任务，将无法访问对应的IP地址或域名。
+    对于已添加的沙箱白名单，您也可以单击**操作**列下的![gagag](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/9846725161/p246584.png)图标，删除后项目空间下的Shell、Python任务，将无法访问对应的IP地址或域名。
 
 
 ## 步骤五：配置项目空间的数据读写申请权限
 
 1.  在**其他设置**对话框的**通用功能控制**区域，选择是否需要开启**数据读写权限申请**权限。
 
-    ![dagfa](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6160107161/p256843.png)
+    ![dagfa](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/6160107161/p256843.png)
 
     开启或关闭数据写权限申请：
 
@@ -137,7 +138,7 @@ Dataphin支持两种开发模式的项目空间。
 
     创建完Basic项目空间后，即可进入工作区开始数据的研发。如何基于Dataphin开发数据，请参见[数据开发](/cn.zh-CN/数据开发/概述.md)。
 
-    ![gagaga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4562627161/p258655.png)
+    ![gagaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/4562627161/p258655.png)
 
 
 ## 同步创建数据源的机制
