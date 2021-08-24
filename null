@@ -1,31 +1,18 @@
 ---
-keyword: Hive数据源
+keyword: DataHub数据源
 ---
 
-# 新建Hive数据源
+# 新建DataHub数据源
 
-本文为您介绍如何新建Hive类型的数据源。
+本文为您介绍如何新建DataHub类型的数据源。
 
-获取如下参数：
-
--   Hive的配置参数：
-    -   Hive的JDBC连接地址
-    -   Hive配置Kerberos认证的文件
-    -   Kerberos认证Principal名
--   元数据库的配置参数：
-    -   云数据库的**JDBC URL**
-    -   登录元数据库的**用户名**
-    -   登录元数据库的**密码**
-
-如果开启Kerberos，则需要获取如下参数：
-
--   HDFS文件
--   Kerberos认证Principal名
--   Krb5文件或KDC Server
+-   已获取业务数据源的**Endpoint**。
+-   已获取业务数据源的**Project Name**。
+-   已获取鉴权的**Access ID**和**Access Key**。
 
 1.  登录[Dataphin控制台](https://dataphin.console.aliyun.com/workingArea)。
 
-2.  在Dataphin控制台页面，选择工作区地域后，单击**进入Dataphin\>\>**。
+2.  在Dataphin控制台页面，**选择工作区地域**后，单击**进入Dataphin\>\>**。
 
 3.  进入数仓**规划**页面。
 
@@ -33,40 +20,33 @@ keyword: Hive数据源
     -   在Dataphin首页，单击顶部菜单栏下方的**智能数仓规划**。
 4.  在数仓**规划**页面，单击左侧导航栏的**数据源**。
 
+    ![fagaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/6278209951/p93923.png)
+
 5.  在**数据源**页面，单击右上方的**新建数据源**。
 
-6.  在**新建数据源**对话框，填写数据源信息。
+6.  在**新建数据源**对话框中，填写数据源信息。
 
-    ![fafafa](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/9755209951/p93931.png)
+    ![fagaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/6855209951/p93939.png)
 
-    |区域|参数|描述|
-    |--|--|--|
-    |**基本信息**|**数据源类型**|选择数据源类型为**HIVE**。|
+    |参数|描述|
+    |--|--|
+    |**数据源类型**|选择数据源类型为**DATAHub**。|
     |**数据源名称**|填写数据源名称。数据源名称由汉字、数字、字母、下划线（\_）或短划线（-）组合组成。|
-    |**数据源描述**|填写对数据源简单的描述。|
-    |**数据源配置**|配置数据源：     -   如果开发模式是Basic模式，则选择**生产数据源**。
-    -   如果开发模式是Dev-Prod模式，则可以通过以下方式配置数据源：
-        -   单击**生产+开发数据源**，配置生产环境和开发环境的数据源。
-        -   单击**生产数据源**，配置生产数据源。完成生产数据源的创建后，单击**开发数据源**，配置开发环境的数据源。
+    |**数据源描述**|对数据源的简单描述。|
+    |**数据源配置**|选择新建数据源所属的项目：     -   如果您的开发模式是Basic模式，则新建数据源时选择**生产数据源**。
+    -   如果您的开发模式是Dev-Prod模式，则可以通过两种方式新建数据源：
+        -   单击**生产数据源**，完成生产数据源的配置后，单击**开发数据源**添加开发环境的数据源。
 
 ![fagaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/6278209951/p93912.png)
 
-**说明：** 系统支持配置**生产数据源**和**开发数据源**为相同的数据源，也可以配置为不同的数据源。 |
-    |**集群配置**|**NameNode**|配置格式为hostname:port或者ip:port，其中hostname、port、ip为数据库的hostname、port、ip。|
-    |**Kerberos**|您可以选择**开启**或**关闭**Kerberos认证。如果您选择**开启**Kerberos认证，则还需要配置HDFS和**KDC Server**或上传Kerberos认证的文件：    -   配置HDFS的**HDFS Keytab File**和**HDFS Principal**。即上传HDFS文件及填写Kerberos认证Principal名。
-    -   如果当前模式为Krb5文件配置模式，则单击**切换为KDC地址配置模式**。在**KDC Server**输入框中，输入KDC统一服务地址，支持配置多个地址，使用英文逗号（,）隔开。
-    -   如果当前模式为KDC地址配置模式，则单击**切换为Krb5文件配置模式**。单击**选择文件上传**，上传Kerberos认证的文件。 |
-    |**Krb5文件**|选择上传的**Krb5文件**。|
-    |**Hive配置**|**JDBC URL**|请输入Hive的JDBC连接地址。|
-    |**Hive Keytab File**|选择**Hive Keytab File**上传的文件。|
-    |**Hive Principal**|填写kerberos认证的Principal名。|
-    |**元数据库配置**|**数据库类型**|选择元数据库类型。系统支持选择**MySQL**或**PostgreSQL**。|
-    |**JDBC URL**|填写元数据库的JDBC连接地址。|
-    |**用户名**|数据库的登录**用户名**。|
-    |**密码**|数据库的登录**密码**。|
+        -   单击**生产+开发数据源**，完成生产环境和开发环境的数据源创建。 |
+    |**Endpoint**|填写连接目标数据源的地址信息。|
+    |**Project Name**|填写数据源的项目名称。|
+    |**Access ID**|填写连接数据源的Access ID。|
+    |**Access Key**|填写连接数据源的Access Key。|
 
-7.  单击**测试连接**。
+7.  数据源信息填写完成后，单击**测试连接**。
 
-8.  测试成功后，单击**确定**，完成Hive数据源的创建。
+8.  测试成功后，单击**确定**，完成DataHub数据源的创建。
 
 
