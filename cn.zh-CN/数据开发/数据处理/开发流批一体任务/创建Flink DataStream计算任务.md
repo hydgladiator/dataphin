@@ -20,7 +20,7 @@ Dataphin支持超级管理员、项目管理员和开发者创建Flink DataStrea
 
     ![gagag](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/3946428261/p300201.png)
 
-5.  在**新建Flink\_DataStream**对话框，配置参数后，单击单击**确定**。
+5.  在**新建Flink\_DataStream**对话框，配置参数后，单击**确定**。
 
     ![tset](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/8397549951/p112698.png)
 
