@@ -80,7 +80,7 @@ keyword: 购买Dataphin实例
 
 6.  在**确认订单**页面，请您确认购买的Dataphin实例规格。确认无误后，单击**服务协议**后的**智能数据构建与管理服务协议**，请仔细阅读服务协议内容。确认服务协议内容后，选中**我已阅读并同意智能数据构建与管理服务协议**，单击**去支付**。
 
-    ![gagag](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/4735300361/p312874.png)
+    ![gagag](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/3273500361/p312874.png)
 
     购买Dataphin成功后，通常需要5分钟~10分钟开通服务，请您耐心等待。如果开通服务失败，系统会自动为您退款。
 
