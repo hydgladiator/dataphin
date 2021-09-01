@@ -45,7 +45,7 @@ Dataphin支持对接的数据源包括大数据存储型数据源、文件数据
 |PostgreSQL|支持|不支持|不支持|支持|不支持|[创建PostgreSQL数据源](/cn.zh-CN/数仓规划/数据源/关系型数据源/创建PostgreSQL数据源.md)|
 |Oracle|支持|不支持|不支持|支持|不支持|[创建Oracle数据源](/cn.zh-CN/数仓规划/数据源/关系型数据源/创建Oracle数据源.md)|
 |AnalyticDB for MySQL 2.0|支持|不支持|不支持|支持|不支持|[创建AnalyticDB for MySQL数据源](/cn.zh-CN/数仓规划/数据源/关系型数据源/创建AnalyticDB for MySQL数据源.md)|
-|AnalyticDB for MySQL 3.0|支持|支持|不支持|支持|不支持|[新建AnalyticDB for MySQL 3.0数据源]()|
+|AnalyticDB for MySQL 3.0|支持|支持|不支持|支持|不支持|[创建AnalyticDB for MySQL数据源](/cn.zh-CN/数仓规划/数据源/关系型数据源/创建AnalyticDB for MySQL数据源.md)|
 |AnalyticDB for PostgreSQL|支持|不支持|支持|支持|支持|[创建AnalyticDB for PostgreSQL数据源](/cn.zh-CN/数仓规划/数据源/关系型数据源/创建AnalyticDB for PostgreSQL数据源.md)|
 |OceanBase|支持|不支持|不支持|不支持|不支持|[创建OceanBase数据源](/cn.zh-CN/数仓规划/数据源/关系型数据源/创建OceanBase数据源.md)|
 |Vertica|支持|不支持|不支持|不支持|不支持|[创建Vertica数据源](/cn.zh-CN/数仓规划/数据源/关系型数据源/创建Vertica数据源.md)|
