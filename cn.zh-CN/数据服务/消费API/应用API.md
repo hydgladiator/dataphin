@@ -35,16 +35,16 @@ keyword: [应用API, 消费API]
     -   申请应用：
 
         1.  查询需要申请的应用，单击**申请状态**下的**立即申请**。
-        2.  进入Dataphin权限管理模块，申请应用的权限，请参见[申请应用权限](/cn.zh-CN/资产中心/权限管理/我的权限/数据服务权限/管理应用权限.md)。
+        2.  进入Dataphin权限管理模块，申请应用的权限，请参见[申请应用权限](/cn.zh-CN/权限管理/我的权限/数据服务权限/管理应用权限.md)。
 
-            申请权限的流程及申请状态，在通知中心的我发起的模块查看，请参见[查看我发起的任务](/cn.zh-CN/全局管理/通知中心/查看任务中心.md)。
+            申请权限的流程及申请状态，在通知中心的我发起的模块查看，请参见[查看我发起的任务](/cn.zh-CN/通知中心/查看任务中心.md)。
 
         管理已申请或创建的应用。
 
         |操作|说明|
         |--|--|
-        |编辑|单击**操作**列下的![faga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6911987951/p85510.png)图标，编辑应用。|
-        |删除|单击**操作**列下的![gaga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6911987951/p85543.png)图标，删除应用。|
+        |编辑|单击**操作**列下的![faga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/6911987951/p85510.png)图标，编辑应用。|
+        |删除|单击**操作**列下的![gaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/6911987951/p85543.png)图标，删除应用。|
 
 
 ## 步骤二：查询API
@@ -69,7 +69,7 @@ keyword: [应用API, 消费API]
     1.  进入个人工作台，请参见[进入个人工作台](/cn.zh-CN/数据服务/进入数据服务.mdsection_qqx_ykf_t7p)。
     2.  在**个人工作台**页面，单击左侧导航栏中**服务调用**下的**API服务**。
     3.  在**API服务**页面，单击**申请API**。
-4.  在**API权限申请**页面，申请API权限，请参见[申请API权限](/cn.zh-CN/资产中心/权限管理/我的权限/数据服务权限/管理API权限.md)。
+4.  在**API权限申请**页面，申请API权限，请参见[申请API权限](/cn.zh-CN/权限管理/我的权限/数据服务权限/管理API权限.md)。
 
 
 ## 步骤四：调试API
@@ -78,7 +78,7 @@ keyword: [应用API, 消费API]
 
 2.  在**个人工作台**页面，单击左侧导航栏**API服务**。
 
-3.  单击**操作**列下的![gaga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3911987951/p85572.png)图标，进入**API调试**页面。
+3.  单击**操作**列下的![gaga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/3911987951/p85572.png)图标，进入**API调试**页面。
 
 4.  在**API调试**对话框，配置参数。
 
@@ -97,7 +97,7 @@ keyword: [应用API, 消费API]
 
 6.  查看**返回结果**后的测试结果，单击**查看错误代码表**查看API错误代码。
 
-    如果调试结果为失败，您可以单击**操作**列下的![faga](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3911987951/p85589.png)图标，根据页面提示单击**确定**，即可将API与应用解绑。
+    如果调试结果为失败，您可以单击**操作**列下的![faga](https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/3911987951/p85589.png)图标，根据页面提示单击**确定**，即可将API与应用解绑。
 
 
 ## 步骤五：调用API
@@ -108,10 +108,35 @@ keyword: [应用API, 消费API]
 
 3.  在**调用示例**页面，单击**API调用示例**，查看SDK调用和API-TOKEN调用的代码模板和注意事项。
 
-    您也可以单击**默认调用示例下载**，下载API调用示例。
+    您也可以单击**默认调用示例下载**，下载API调用示例。如果需要通过SDK方式调用API，则单击**SDK下载**，下载SDK代码包。
 
-    如果需要通过SDK方式调用API，则单击**SDK下载**，下载SDK代码包。
+    完成调用API后，即可查询数据。对于不同的服务类型和数据源支持查询条数如下表所示。
 
-    ![gagag](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4269727261/p298240.png)
+    |服务类型|服务单元|数据源类型|单次最大返回条数|查询总条数限制|
+    |----|----|-----|--------|-------|
+    |API|单物理表服务单元|MySQL|1000|无上限|
+    |SQL Server|
+    |PostgreSQL|
+    |ElasticSearch|
+    |AnalyticDB for MySQL2.0|
+    |AnalyticDB for MySQL3.0|
+    |AnalyticDB for PostgreSQL|
+    |Oracle|1000|1000|
+    |HBase（0.9.4、1.1.x）|
+    |MongoDB|
+    |API|多物理表服务单元|MySQL|1000|无上限|
+    |SQLServer|
+    |PostgreSQL|
+    |AnalyticDB for MySQL2.0|
+    |AnalyticDB for MySQL3.0|
+    |AnalyticDB for PostgreSQL|
+    |API|多物理表服务单元|Oracle|1000|1000|
+    |ElasticSearch|
+    |HBase（0.9.4、1.1.x）|
+    |MongoDB|
+    |逻辑表API|Dataphin逻辑表|不涉及|1000|1000|
+    |Dataphin数据源|不涉及|Dataphin数据源|0~10000|无上限|
+
+    在通过SDK调用API时，如需查询第9000~10000条数据，则公共请求参数PageStart配置为8999，PageSize配置为1000。
 
 
