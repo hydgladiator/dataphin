@@ -100,10 +100,10 @@ Flink SQL是为了简化计算模型、降低您使用Flink门槛而设计的一
         |parallel|表示同时并发的线程数量，用户可以选择合适的数量来运行自己的任务，并不是越大越好，越大代表你资源申请的越多，反而对性能有抑制。通常，一个简单计算节点每秒可以处理2000~4000条之间的数据。
 
 **说明：** 如果源头是tt，tt的queue大小决定了parallel的上限，不能超过这个数字，否则程序将报错。 |
-        |direct\_memory|单位为MB，direct\_memory并不是虚拟机运行时数据区的一部分，也不是Java虚拟机规范中定义的内存区域。但是这部分内存也被频繁的使用，而且也可能导致OutOfMemoryError异常出现。如果您的程序有使用igraph或者swift，可以适当配置其大小，如16-32MB。在java NIO（New Input/Output）类，引入了一种基于通道（Channel）与缓冲区（Buffer）的I/O方式，direct\_memory可以使用Native函数库直接分配堆外内存，然后同一个存储在Java堆中的DirectByteBuffer对象作为这块内存的引用进行操作。这样能在一场场景中显著提高性能，因为避免了在Java堆和Native堆中来回复制数据。 |
-        |native\_memory|单位为MB，native\_memory没有相应的参数来控制大小，其大小依赖于操作系统进程的最大值（对于32位系统就是3~4G，各种系统的实现并不一样），以及生成的JAVA字节码大小、创建的线程数量、维持JAVA对象的状态信息大小（用于GC）以及一些第三方的包。native memory存放下面4种信息：
+        |direct\_memory|单位为MB，direct\_memory并不是虚拟机运行时数据区的一部分，也不是Java虚拟机规范中定义的内存区域。但是这部分内存也被频繁的使用，而且也可能导致OutOfMemoryError异常出现。如果您的程序有使用igraph或者swift，可以适当配置其大小，如16-32MB。在Java NIO（New Input/Output）类，引入了一种基于通道（Channel）与缓冲区（Buffer）的I/O方式，direct\_memory可以使用Native函数库直接分配堆外内存，然后同一个存储在Java堆中的DirectByteBuffer对象作为这块内存的引用进行操作。这样能在一场场景中显著提高性能，因为避免了在Java堆和Native堆中来回复制数据。 |
+        |native\_memory|单位为MB，native\_memory没有相应的参数来控制大小，其大小依赖于操作系统进程的最大值（对于32位系统就是3~4G，各种系统的实现并不一样），以及生成的Java字节码大小、创建的线程数量、维持Java对象的状态信息大小（用于GC）以及一些第三方的包。native memory存放下面4种信息：
 
-        -   管理java heap的状态数据（用于GC）。
+        -   管理Java heap的状态数据（用于GC）。
         -   JNI调用，也就是Native Stack。
         -   JIT（即使编译器）编译时使用native memory，并且JIT的输入（Java字节码）和输出（可执行代码）也都是保存在native memory。
         -   NIO direct buffer。 |
@@ -247,8 +247,8 @@ Flink SQL是为了简化计算模型、降低您使用Flink门槛而设计的一
 
 5.  发布Flink SQL任务至生产环境。
 
-    -   如果您的开发模式是Dev-Prod模式，则需要发布实时计算任务，详情请参见[管理发布任务](/cn.zh-CN/任务发布/管理发布任务.md)。
+    -   如果您的开发模式是Dev-Prod模式，则需要发布实时计算任务，详情请参见[管理发布任务](/cn.zh-CN/发布与运维/发布中心/管理发布任务.md)。
     -   如果您的开发模式是Basic模式，则提交成功的实时计算任务，即可进入生产环境。
 
-在运维中心查看并运维Flink SQL任务，保证任务的正常运行。具体操作，请参见[实时任务](/cn.zh-CN/运维中心/任务运维/实时任务.md)或[实时实例](/cn.zh-CN/运维中心/实例运维/实时实例.md)。
+在运维中心查看并运维Flink SQL任务，保证任务的正常运行。具体操作，请参见[实时任务](/cn.zh-CN/发布与运维/运维中心/任务运维/实时任务.md)或[实时实例](/cn.zh-CN/发布与运维/运维中心/实例运维/实时实例.md)。
 
